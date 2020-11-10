@@ -108,3 +108,109 @@ Die exakte mathematische Analyse von vielen Algorithmen ist schwierig - unmögli
 
 Muss differenzieren zwischen Best, Worst, Aerage-Case.
 
+
+
+## Algorythm Schemas
+
+### Interativ
+
+* Loop
+* Daten in einem Array
+* Lässt isch gut paralellisieren
+
+### Rekursiv
+
+* ruft sich selbst wieder auf
+* Direkt und Indirekt
+* Wichtig: benötigt abbruchbeedingung, damit er sich terminiert
+* Macht Sinn wenn, Algorithmus klarer oder kürzer wird und die Komplexität nicht grösser wird.
+* Examples:
+  * Fibonacci Zahl berechnen
+  * Fakultät berechnen
+
+### Divide and Conquer
+
+*  Grosse probleme in kleinere Aufteilen
+  * Anschliessend triviale Aufgaben zusammenführen zur Gesamtlösung
+* Beispiel: Quicksort / Mergesort
+* 
+
+### Greedy
+
+Immer den nächsten Optimalen finden.
+
+Nicht umbedingt die beste Lösung. Nur Lokales optimum.
+
+Example: Prims Algorithmus
+
+
+
+# Abstrakter Datentyp
+
+!= abstract in c#
+
+ADT == shorthand writing
+
+adt in c# == interface
+
+
+
+* Datenvolumen
+* Geschwindigkeit
+
+Datenstruktur ist die Implementierung eines Abstrakten Datentyps
+
+
+
+Gruppen von Datenstrukturen
+
+* Linear
+  * List
+  * Stack
+  * Queue
+* Tree
+  * Binary Tree
+  * Balanced Tree
+* Dictionary
+  * Key-Value Pair
+  * Hashtable
+
+
+
+C# bietet:
+
+* Array
+* ArrayList
+* List
+* LinkeyList
+* Dictionary
+* Hashtable
+* HashSet
+* Stack
+* Queue
+
+# Array
+
+multidimensional: int[,,] a = new int[2,3,4];
+
+jagged array: int\[][] a = new int\[3]][];
+
+# Linked List
+
+Array mit Data und Link auf nächsten Node.
+
+# Exercise
+
+```c#
+for (int i = n; i > 1; i = i/2)
+{
+    for (int i= 1; j <= n; j++)
+    {
+        DoSomething();
+    }
+}
+```
+
+ log(n) * n
+
+
